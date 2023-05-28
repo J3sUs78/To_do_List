@@ -1,0 +1,120 @@
+:root{
+    --white: #fafafb;
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+    height: 100vh;
+    font-family: 'Prompt', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.perfil h1{
+    color: var(--white);
+}
+
+.perfil span{
+    color: var(--white);
+    letter-spacing: 1px;
+}
+
+#fecha{
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+div {
+    display: block;
+}
+
+
+/* Add Pendient*/
+
+.addPendient{
+    background-color: var(--white) ;
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.addPendient input{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+    padding-left: 10px;
+}
+
+.addPendient i{
+    font-size: 50px;
+    color: var(--purple);
+}
+
+
+.addPendient i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.addPendient input::placeholder {
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+
+.section-pendient h3{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.section-pendient li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom,var(--blue-dark),var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    color: var(--white);
+    margin: 5px 0;
+}
+
+.section-pendient i{
+    font-size: 25px;
+}
+
+.section-pendient > ul p{
+    font-size: 1.2rem;
+}
+
+.section-pendient i:hover{
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color : var(--blue-light);
+}
+
+
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+}
